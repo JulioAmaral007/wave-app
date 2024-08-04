@@ -1,25 +1,28 @@
+import {
+  Quicksand_300Light,
+  Quicksand_400Regular,
+  Quicksand_500Medium,
+  Quicksand_600SemiBold,
+  Quicksand_700Bold,
+  useFonts,
+} from '@expo-google-fonts/quicksand';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
+import "../styles/global.css";
 
-import {
-  Inter_400Regular,
-  Inter_500Medium,
-  Inter_600SemiBold,
-  useFonts,
-} from "@expo-google-fonts/inter";
-import { StatusBar } from 'expo-status-bar';
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
-    Inter_500Medium,
-    Inter_400Regular,
-    Inter_600SemiBold,
-  })
+    Quicksand_300Light,
+    Quicksand_400Regular,
+    Quicksand_500Medium,
+    Quicksand_600SemiBold,
+    Quicksand_700Bold,
+  });
 
   useEffect(() => {
     if (fontsLoaded) {
@@ -33,7 +36,7 @@ export default function RootLayout() {
 
   return (
     <>
-      <StatusBar style="inverted" />
+      <StatusBar backgroundColor="#F8F9FA" style="dark" />
 
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
