@@ -7,7 +7,7 @@ import { images } from "../constants";
 export default function Index() {
   return (
     <SafeAreaView className="h-screen">
-      <View className="w-full flex justify-center items-center h-full px-7 bg-white-100">
+      <View className="w-full flex justify-center items-center h-full px-7 bg-background-primary">
         <Image
           source={images.logo}
           className="w-[130px] h-[84px]"
@@ -21,7 +21,7 @@ export default function Index() {
         />
 
         <View className="relative mt-5">
-          <Text className="text-3xl text-blue-400 font-bold text-center">
+          <Text className="text-3xl text-text-primary font-bold text-center">
             Explore Novas{"\n"}
             Oportunidades com{" "}
             <Text className="text-secondary-200">Wave</Text>
@@ -34,14 +34,14 @@ export default function Index() {
           />
         </View>
 
-        <Text className="text-xl text-blue-400 mt-7 text-center">
+        <Text className="text-xl text-text-primary mt-7 text-center">
           Onde Criatividade Encontra Inovação: Inicie sua Jornada com a Wave
         </Text>
 
         <Button
           variant="primary"
           className="mt-7 w-full"
-          onPress={() => router.push("/sign-up")}
+          onPress={() => router.push("/sign-in")}
           title="Continuar com E-mail"
         >
         </Button>

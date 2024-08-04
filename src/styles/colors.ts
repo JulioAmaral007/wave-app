@@ -1,18 +1,33 @@
 export const colors = {
-  blue: {
-    100: "#A4D4F7",
-    400: "#003366",
+  background: {
+    primary: "#121212",  // Fundo principal (quase preto)
+    secondary: "#1E1E1E", // Fundo secundário (cinza escuro)
   },
-  lime: {
-    300: "#3EB489",
+  
+  text: {
+    primary: "#FFFFFF",  // Branco (para texto sobre fundo escuro)
+    secondary: "#B0BEC5", // Cinza Azulado Claro (para texto secundário e menos destacado)
   },
-  gray: {
-    100: "#F0F0F0",
+
+  accent: {
+    primary: "#00B0FF", // Azul Ciano Vibrante (para destaques e botões principais)
+    secondary: "#1E88E5", // Azul Vivo (para destaques alternativos e botões secundários)
+    error: "#FF6D00",  // Laranja (para mensagens de erro ou alertas)
   },
-  red: {
-    100: "#FF6F61",
+  
+  border: {
+    light: "#4F9A94", // Azul Escuro (para bordas leves e contornos)
+    dark: "#003C71",  // Azul Marinho (para bordas mais escuras e separadores)
   },
-  white: {
-    100: "#F8F9FA",
+  
+  button: {
+    primary: "#6200EE", // Botões primários (roxo escuro)
+    secondary: "#03DAC6", // Botões secundários (verde água)
+    disabled: "#9E9E9E", // Botões desativados (cinza claro)
   },
-}
+  
+  overlay: {
+    dark: "rgba(0, 0, 0, 0.5)", // Sobreposições escuras
+    light: "rgba(255, 255, 255, 0.1)", // Sobreposições claras
+  },
+};

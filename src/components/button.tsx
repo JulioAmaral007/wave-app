@@ -30,8 +30,8 @@ function Button({
       className={clsx(
         "rounded-xl min-h-[62px] flex flex-row justify-center items-center",
         {
-          "bg-blue-400": variant === "primary",
-          "bg-lime-300": variant === "secondary",
+          "bg-button-primary": variant === "primary",
+          "bg-button-secondary": variant === "secondary",
         },
         className
       )}
@@ -39,7 +39,7 @@ function Button({
       disabled={isLoading}
       {...rest}
     >
-      <Text className="text-gray-100 font-bold text-3xl">
+      <Text className="text-text-primary font-bold text-3xl">
         {title}
       </Text>
 

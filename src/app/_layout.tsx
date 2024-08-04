@@ -36,7 +36,7 @@ export default function RootLayout() {
 
   return (
     <>
-      <StatusBar backgroundColor="#F8F9FA" style="dark" />
+      <StatusBar backgroundColor="#121212" style="light" />
 
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
